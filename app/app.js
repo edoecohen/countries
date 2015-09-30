@@ -4,15 +4,15 @@ angular.module("CountryApp", ['ngRoute', 'countriesLibrary', 'ui.bootstrap'])
 
 	$routeProvider
 	.when('/', {
-		templateUrl : './home.html',
+		templateUrl : 'app/home.html',
 		controller : 'HomeCtrl'
 	})
 	.when('/countries', {
-		templateUrl : './countries.html',
+		templateUrl : 'app/countries.html',
 		controller : 'CountriesCtrl'
 	})
 	.when('/countries/:countryID', {
-		templateUrl : './country.html',
+		templateUrl : 'app/country.html',
 		controller : 'CountryCtrl'
 		/*resolve : {
 			country: function(allCountries, $route, $location) {

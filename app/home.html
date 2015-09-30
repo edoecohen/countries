@@ -11,7 +11,7 @@
     <carousel interval="myInterval">
       <slide ng-repeat="capital in capitals" active="capital.active" class="slide">
         <a href="#/countries/{{capital.id}}">
-          <img ng-src="images/capitals/{{capital.img}}">
+          <img ng-src="app/images/capitals/{{capital.img}}">
           <div class="carousel-caption">
             <h1>{{capital.capital}}, {{capital.country}}</h1>
           </div>

@@ -6,7 +6,7 @@ angular.module('countriesLibrary', [])
   .constant('USERNAME', '&username=edoecohen')
   .constant('COUNTRY_PATH', '&country={{ id }}')
   .constant('FIND_COUNTRY_PATH', '/?q={{ q }}')
-  .constant('CAPITALS', './capitals.json')
+  .constant('CAPITALS', 'app/capitals.json')
   
 // GET ALL COUNTRIES FOR THE COUNTRIES LIST
   .factory('allCountries', ['$rootScope', '$http', '$q', 'COUNTRY_INFO', 'USERNAME',
